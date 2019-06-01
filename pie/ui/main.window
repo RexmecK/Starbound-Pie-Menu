@@ -1,0 +1,35 @@
+{
+	"gui" : {
+		"background" : {
+			"zlevel" : -1,
+			"type" : "background",
+
+			"fileBody" : "/pie/ui/image/body.png"
+		},
+
+		"pie" : {
+			"zlevel" : 4,
+			"type" : "canvas",
+			"script" : "/pie/ui/widgetScripts/pie.lua",
+			"rect" : [0, 0, 500, 500],
+
+			"elementImage" : "/pie/ui/image/circle.png",
+
+			"captureMouseEvents" : true,
+			"captureKeyboardEvents" : false
+		}
+	},
+
+	"canvasClickCallbacks" : {
+		"pie" : "handleMouse"
+	},
+
+	"list" : [],
+	"callbackScript" : null,
+
+	"mainScript" : "/pie/ui/main.lua",
+
+    "localDir" : "/pie/ui/",
+	"scripts" : ["/pie/ui/scripts/core.lua"],
+	"scriptDelta" : 1
+}
