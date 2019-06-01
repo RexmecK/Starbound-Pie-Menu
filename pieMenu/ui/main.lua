@@ -3,18 +3,13 @@ include "book"
 main = {}
 main.picked = false
 
-local templist = {
-    {image = "/assetmissing.png", text = "test1"},
-    {image = "/ai/ai.png", text = "test2"}
-}
-
 function main:init()
     local callbackScript = config.getParameter("callbackScript")
     if type(callbackScript) == "string" then
         require(callbackScript)
     end
     
-    self.list = config.getParameter("list", templist)
+    self.list = config.getParameter("list", {})
     self.book = book:new(self.list,10)
     self:initPage()
 end

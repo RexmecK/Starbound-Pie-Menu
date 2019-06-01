@@ -3,9 +3,9 @@
 
     Element = {text = "text", image = "/ai/ai.png"} or "text name"
 
-    LuaTable pie(List<Element> list, String callbackScript, [Json parameters])
+    LuaTable pieMenu(List<Element> list, String callbackScript, [Json parameters])
     
-    local newPie = pie(...)
+    local newPie = pieMenu(...)
 
         Json newPie.config
         List<Element> newPie.list
@@ -18,9 +18,9 @@
 ]]
 
 
-function pie(list, callbackScript, parameters)
+function pieMenu(list, callbackScript, parameters)
     local new = {}
-    new.config = root.assetJson("/pie/ui/main.window")
+    new.config = root.assetJson("/pieMenu/ui/main.window")
 
     new.config.callbackScript = callbackScript
     new.config.list = list or jarray()
