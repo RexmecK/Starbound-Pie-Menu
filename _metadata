@@ -1,7 +1,7 @@
 {
   "version": "Alpha 1",
   "friendlyName": "Starbound Pie UI",
-  "name": "pie",
+  "name": "pieMenu",
   "author": "RexmecK",
   "description": "Api that shows options"
 }
