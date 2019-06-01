@@ -27,8 +27,8 @@ module.outer = 50
 module.clearing = false
 module.clearingDirection = 1
 module.waitclear = 0
-module.stylistWait = 2/60
-module.lerpRatio = 0.5
+module.stylistWait = 5/60
+module.lerpRatio = 0.25
 module.fontSize = 8
 
 function module:updateElements(dt)

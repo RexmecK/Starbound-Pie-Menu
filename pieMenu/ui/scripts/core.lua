@@ -1,5 +1,4 @@
 LOCALPATH = "/"
-screenPosition = {0,0}
 
 function lp(path)
     if path:sub(1,1) == "/" then
@@ -26,10 +25,6 @@ function update(dt)
     if main and main.update then
         main:update(dt)
     end
-end
-
-function createTooltip(a)
-    screenPosition = a
 end
 
 function uninit()

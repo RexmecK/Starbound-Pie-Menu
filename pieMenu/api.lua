@@ -1,20 +1,21 @@
 --[[
     USAGE:
 
-    Element = {text = "text", image = "/ai/ai.png"} or "text name"
+    Element = {text = "text", image = "/ai/ai.png"}
 
     LuaTable pieMenu(List<Element> list, String callbackScript, [Json parameters])
     
-    local newPie = pieMenu(...)
+    local newPie = pieMenu(List<Element> list, String callbackScript, [Json parameters])
 
-        Json newPie.config
+        ScriptPane newPie.config
+            Json newPie.config.parameters
         List<Element> newPie.list
+        
         String newPie.callbackScript
+            The callbackScript must have this: function callback(Index, Element, parameters) end
+
         Void newPie:open()
 
-
-
-    callbackScript must have this: function callback(index, element, parameters) end
 ]]
 
 
