@@ -24,7 +24,7 @@ function pieMenu(list, callbackScript, parameters)
 
     new.config.callbackScript = callbackScript
     new.config.list = list or jarray()
-    new.config.parameters = list or jarray()
+    new.config.parameters = parameters or jarray()
 
     function new:open()
         player.interact("ScriptPane", self.config)
