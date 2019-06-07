@@ -29,7 +29,7 @@
 
 	"mainScript" : "/pieMenu/ui/main.lua",
 
-    "localDir" : "/pieMenu/ui/",
+	"localDir" : "/pieMenu/ui/",
 	"scripts" : ["/pieMenu/ui/scripts/core.lua"],
 	"scriptDelta" : 1
 }

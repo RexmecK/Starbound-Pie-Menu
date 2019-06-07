@@ -85,7 +85,7 @@ function module:updateCanvas(dt)
 		local curOuter = vec2.add(cur, vec2.rotate({0,self.outer}, math.rad(element.angle)))
 		local color = "#aaa"
 
-		if not self.hovering and rect.contains(rect.translate(box,  curOuter), self.mousePosition) then
+		if not self.hovering and rect.contains(rect.translate(box, curOuter), self.mousePosition) then
 			self.hovering = i
 			color = "#fff"
 		end
@@ -126,7 +126,7 @@ end
 function module:handleMouse(position, button, isdown)
 	self.mousePosition = self.canvas:mousePosition()
 	if button == 0 and isdown and self.hovering then
-		local element =  self._elements[self.hovering]
+		local element = self._elements[self.hovering]
 		local cur = vec2.add(element.position, vec2.mul(self.sizeCanvas, 0.5))
 		if element.func then
 			element.func()
